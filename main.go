@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net"
 
@@ -24,7 +23,7 @@ func main() {
 	if err != nil {
 		log.Fatalln("Failed to listening:", err)
 	}
-	fmt.Println("Auth service on:", c.Port)
+	log.Println("Auth service on:", c.Port)
 
 	s := services.Server{
 		H: h,
